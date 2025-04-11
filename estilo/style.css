@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(../pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+:root {
+    
+    /* Cores */
+    
+    --laranja: #FFA400;
+    --ciano: #52FFEE;
+    --azul: #3590F3;
+    --preto: #2E2C2C;
+    --verde: #91F5AD;
+
+    /* Categorias */
+
+    --destaque: #328536;
+    --links: #474747;
+    --corcaixas: #2e2c2c;
+    --corheader: #2e2c2c;
+    --cornav: #2e2c2c;
+    --cordefundo: #F5EDF0;
+    --texto: #F5EDF0;
+    --aside: rgb(189, 131, 143); 
+    
+    /* Fontes */
+
+    --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    --fonte-destaque: "Boldonse", system-ui;
+
+    --fonte-android: "idroid", cursive;
+}
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+ 
+body {
+    background-color: var(--cordefundo);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--texto);
+
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-color: var(--corheader);
+    min-height: 150px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    padding-top: 30px;
+    margin-bottom: 14px;
+    font-size: 26px;
+    text-shadow: 1px 1px 4px black;
+}
+
+header p {
+    text-align: center;
+    font-size: 15px;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.644);
+}
+
+nav {
+    background-color: var(--corheader);
+    padding: 15px;
+    box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.048);
+    text-align: center;
+}
+
+nav a {
+    color: var(--texto);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 200ms;
+}
+
+nav a:hover {
+    background-color: #777777;
+    color: black;
+}
+
+main {
+    min-width: 256px;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    background-color: var(--corcaixas);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--links);
+    background-color: color-mix(in srgb, var(--links) 50%, white 80%);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: color-mix(in srgb, var(--links) 50%, white 40%);
+    color: color-mix(in srgb, var(--links) 50%, black 50%);
+    transition-duration: 130ms;
+}
+
+main strong {
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pqn {
+    min-width: 256px;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--aside);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.9%;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--aside);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside ul {
+    list-style-type: '\2714 \00A0 \00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside h3 {
+    background-color: color-mix(in srgb, var(--aside) 100%, black 10%);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+    background-color: var(--corcaixas);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer p a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
