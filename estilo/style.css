@@ -20,12 +20,12 @@
 
     /* Categorias */
 
-    --destaque: #328536;
+    --destaque: #8421b9;
     --links: #474747;
     --corcaixas: #2e2c2c;
     --corheader: #2e2c2c;
     --cornav: #2e2c2c;
-    --cordefundo: #F5EDF0;
+    --cordefundo: #2C1D34;
     --texto: #F5EDF0;
     --aside: rgb(189, 131, 143); 
     
@@ -103,7 +103,7 @@ main {
     min-width: 256px;
     max-width: 800px;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.342);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: auto;
@@ -198,6 +198,7 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+    margin-top: 40px;
 }
 
 footer p a {
